@@ -25,7 +25,6 @@ class MainApp extends StatelessWidget {
         ),
         BlocProvider<ActiveTodoCountBloc>(
           create: (context) => ActiveTodoCountBloc(
-            todoListBloc: BlocProvider.of<TodoListBloc>(context),
             initialActiveTodoCount:
                 context.read<TodoListBloc>().state.todos.length,
           ),
@@ -33,9 +32,6 @@ class MainApp extends StatelessWidget {
         BlocProvider<FilteredTodosBloc>(
           create: (context) => FilteredTodosBloc(
             initialTodos: context.read<TodoListBloc>().state.todos,
-            todoFilterBloc: BlocProvider.of<TodoFilterBloc>(context),
-            todoSearchBloc: BlocProvider.of<TodoSearchBloc>(context),
-            todoListBloc: BlocProvider.of<TodoListBloc>(context),
           ),
         ),
       ],
