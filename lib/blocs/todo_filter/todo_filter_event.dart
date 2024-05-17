@@ -7,7 +7,7 @@ sealed class TodoFilterEvent extends Equatable {
   List<Object> get props => [];
 }
 
-class ChangeFilterEvent extends TodoFilterEvent {
+final class ChangeFilterEvent extends TodoFilterEvent {
   final Filter newFilter;
 
   const ChangeFilterEvent({

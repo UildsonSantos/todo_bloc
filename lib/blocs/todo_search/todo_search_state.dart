@@ -1,6 +1,6 @@
 part of 'todo_search_bloc.dart';
 
-class TodoSearchState extends Equatable {
+final class TodoSearchState extends Equatable {
   final String searchTerm;
 
   const TodoSearchState({

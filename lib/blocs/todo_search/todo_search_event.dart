@@ -7,7 +7,7 @@ sealed class TodoSearchEvent extends Equatable {
   List<Object> get props => [];
 }
 
-class SetSearchTermEvent extends TodoSearchEvent {
+final class SetSearchTermEvent extends TodoSearchEvent {
   final String newSearchTerm;
 
   const SetSearchTermEvent({

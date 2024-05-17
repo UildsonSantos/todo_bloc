@@ -21,7 +21,7 @@ final class AddTodoEvent extends TodoListEvent {
   List<Object> get props => [todoDesc];
 }
 
-class EditTodoEvent extends TodoListEvent {
+final class EditTodoEvent extends TodoListEvent {
   final String id;
   final String todoDesc;
 
@@ -37,7 +37,7 @@ class EditTodoEvent extends TodoListEvent {
   List<Object> get props => [id, todoDesc];
 }
 
-class ToggleTodoEvent extends TodoListEvent {
+final class ToggleTodoEvent extends TodoListEvent {
   final String id;
 
   const ToggleTodoEvent({
@@ -51,7 +51,7 @@ class ToggleTodoEvent extends TodoListEvent {
   List<Object> get props => [id];
 }
 
-class RemoveTodoEvent extends TodoListEvent {
+final class RemoveTodoEvent extends TodoListEvent {
   final Todo todo;
 
   const RemoveTodoEvent({

@@ -1,7 +1,7 @@
 part of 'todo_list_bloc.dart';
 
 
-class TodoListState extends Equatable {
+final class TodoListState extends Equatable {
   final List<Todo> todos;
 
   const TodoListState({
